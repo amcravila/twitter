@@ -1,0 +1,30 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segou UI', Arial, sans-serif;
+}
+
+header h1 {
+  color:#1da1f2;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+header h2 {
+  color:#14171a;
+  font-size: 14px;
+  font-weight: 400;
+}
