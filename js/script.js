@@ -2,6 +2,7 @@ var text = document.getElementById('textTwitter');
 var btn = document.getElementById('tweetar');
 btn.addEventListener('click', onClickTweetar);
 text.addEventListener('keyup', disabledBtn);
+text.addEventListener('keyup', autoResize);
 
 function onClickTweetar() {
   var textMsg = text.value;
@@ -26,5 +27,11 @@ function disabledBtn() {
   }
   if (textMsg.length > 120 && textMsg.length <= 130) {
     document.getElementById('counter').style.color = '#ff00ff';
+  }
+}
+
+function autoResize() {
+  while (text.scrollHeight > text.offsetHeight) {
+            text.rows += 1;
   }
 }

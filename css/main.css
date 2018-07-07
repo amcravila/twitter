@@ -63,6 +63,8 @@ form {
 #textTwitter {
   width: 500px;
   align: center;
+  outline: none;
+  resize: none;
 }
 
 #msg {
