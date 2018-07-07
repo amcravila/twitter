@@ -3,6 +3,8 @@ var btn = document.getElementById('tweetar');
 btn.addEventListener('click', onClickTweetar);
 text.addEventListener('keyup', disabledBtn);
 text.addEventListener('keyup', autoResize);
+var hour = document.getElementById('hour');
+btn.addEventListener('click', currentTime);
 
 function onClickTweetar() {
   var textMsg = text.value;
@@ -34,4 +36,9 @@ function autoResize() {
   while (text.scrollHeight > text.offsetHeight) {
             text.rows += 1;
   }
+}
+
+function currentTime() {
+  var data = new Date;
+  hour.innerHTML = 'Hora: ' + data.getHours() + ':' + data.getHours();
 }
