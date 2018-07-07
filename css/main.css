@@ -17,14 +17,44 @@ html, body {
   font-family: 'Segou UI', Arial, sans-serif;
 }
 
-header h1 {
-  color:#1da1f2;
+header {
+  color:#FFF;
   font-size: 21px;
   font-weight: 700;
+  height: 100px;
+  background-color: #1DA1F2;
+  text-align: center;
 }
 
-header h2 {
-  color:#14171a;
+header h1 {
+  margin: 0;
+}
+
+form {
+  height: 550px;
+  background-color: #E6ECF0;
+  padding-top: 10px;
+}
+
+#textTwitter {
+  border: 1px solid #59B9F4;
+  border-radius: 5px;
+}
+
+#btn {
+  background-color: #59B9F4;
+  border-radius: 20px;
+  padding: 8px;
+  border-style: none;
+  color: #FFF;
+  width: 90px;
+  font-weight: 700;
   font-size: 14px;
-  font-weight: 400;
+}
+
+#btn:hover {
+  background-color: #1DA1F2;
+}
+
+#msg {
 }
