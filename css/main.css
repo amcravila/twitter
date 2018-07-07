@@ -41,7 +41,7 @@ form {
   border-radius: 5px;
 }
 
-#btn {
+#tweetar {
   background-color: #59B9F4;
   border-radius: 20px;
   padding: 8px;
@@ -52,11 +52,11 @@ form {
   font-size: 14px;
 }
 
-#btn::before {
+#tweetar::before {
   background-color: grey;
 }
 
-#btn:hover {
+#tweetar:hover {
   background-color: #1DA1F2;
 }
 
