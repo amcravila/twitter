@@ -52,8 +52,17 @@ form {
   font-size: 14px;
 }
 
+#btn::before {
+  background-color: grey;
+}
+
 #btn:hover {
   background-color: #1DA1F2;
+}
+
+#textTwitter {
+  width: 500px;
+  align: center;
 }
 
 #msg {

@@ -13,16 +13,11 @@
       <i class="icon-twitter"></i>
     </header>
     <form>
-        <input type="text" id="textTwitter" placeholder="O que está acontecendo?">
+        <textarea type="text" onkeyup="limitTextarea(this.value)" id="textTwitter" placeholder="O que está acontecendo?" required></textarea>
         <button id="btn" onclick="onClickTweetar()">Tweetar</button>
         <div id="msg"></div>
-        <span id="counter">contador aqui</span>
+        <span id="counter">140</span> Restantes <br>
     </form>
-
-
-    <!-- <section id="messages">
-       <p id="paragraphs"></p>
-    </section> -->
 
     <script type="text/javascript" src="js/script.js"></script>
 

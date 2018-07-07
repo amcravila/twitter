@@ -6,6 +6,16 @@ function onClickTweetar() {
   event.preventDefault();
 }
 
+function limitTextarea(value) {
+    quant = 140;
+    total = value.length;
+    if(total <= quant) {
+        rest = quant - total;
+        document.getElementById('counter').innerHTML = rest;
+    } else {
+        document.getElementById('textTwitter').value = value.substr(0,quant);
+    }
+}
 
 // var tweet = document.getElementsByClassName("tweets")[0];
 // var myButton = document.getElementsByClassName("btn")[0];
