@@ -11,10 +11,12 @@ var form = document.getElementsByTagName('form')[0];
 
 function onClickTweetar() {
   var textMsg = text.value;
-  document.querySelector('#msg').innerHTML = textMsg;
-  event.preventDefault();
-  form.removeChild(counter);
-  form.removeChild(rest);
+  if (textMsg !== '') {
+    document.querySelector('#msg').innerHTML = textMsg;
+    event.preventDefault();
+    form.removeChild(counter);
+    form.removeChild(rest);
+  }
 }
 
 function disabledBtn() {
