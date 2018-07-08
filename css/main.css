@@ -31,14 +31,19 @@ header h1 {
 }
 
 form {
-  height: 550px;
+  height: 560px;
   background-color: #E6ECF0;
+  background-image: url("../assets/images/bolinhas.jpg");
   padding-top: 10px;
 }
 
 #textTwitter {
   border: 1px solid #59B9F4;
   border-radius: 5px;
+  width: 500px;
+  align: center;
+  outline: none;
+  resize: none;
 }
 
 #tweetar {
@@ -55,15 +60,4 @@ form {
 
 #tweetar:hover {
   background-color: #1DA1F2;
-}
-
-#textTwitter {
-  width: 500px;
-  align: center;
-  outline: none;
-  resize: none;
-}
-
-#msg {
-  width: 500px;
 }
