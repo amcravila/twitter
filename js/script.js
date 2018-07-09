@@ -12,9 +12,11 @@ function onClickTweetar() {
   var tweets = document.createElement('p');
   tweets.textContent = document.querySelector('#textTwitter').value;
   msg.appendChild(tweets);
-  event.preventDefault();
   text.value = '';
   counter.innerHTML = 140;
+  btn.setAttribute('disabled', 'true');
+  btn.style.backgroundColor = '#a9a9a9';
+  event.preventDefault();
 }
 
 function stylesCounterBtn() {
