@@ -14,7 +14,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Segou UI', Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 header {
@@ -41,7 +41,6 @@ form {
   border: 1px solid #59B9F4;
   border-radius: 5px;
   width: 500px;
-  align: center;
   outline: none;
   resize: none;
 }
@@ -60,4 +59,15 @@ form {
 
 #tweetar:hover {
   background-color: #1DA1F2;
+}
+
+#msg {
+  background-color: #FFF;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 500px;
+  font-size: 16px;
+  outline: none;
+  resize: none;
+  overflow: auto;
 }
