@@ -21,14 +21,14 @@ function onClickTweetar() {
 
 function stylesCounterBtn() {
   btn.removeAttribute('style');
-  var quant = 140;
+  var sizeText = 140;
   var textMsg = text.value;
-  var rest = quant - textMsg.length;
+  var rest = sizeText - textMsg.length;
   counter.innerHTML = rest;
-  if (textMsg.length <= quant) {
+  if (textMsg.length <= sizeText) {
     btn.removeAttribute('disabled');
   }
-  if (textMsg.length > quant) {
+  if (textMsg.length > sizeText) {
     btn.setAttribute('disabled', 'true');
     counter.style.color = '#ff0000';
     btn.style.backgroundColor = '#a9a9a9';
