@@ -1,24 +1,20 @@
 var text = document.getElementById('textTwitter');
 var btn = document.getElementById('tweetar');
 var counter = document.getElementById('counter');
-var rest = document.getElementById('rest');
-var form = document.getElementsByTagName('form')[0];
-var hour = document.getElementById('hour');
 btn.addEventListener('click', onClickTweetar);
 btn.addEventListener('click', currentTime);
 text.addEventListener('keyup', stylesCounterBtn);
 text.addEventListener('keyup', autoResize);
+btn.setAttribute('disabled', 'true');
 btn.style.backgroundColor = '#a9a9a9';
 
 function onClickTweetar() {
-  var textMsg = text.value;
-  if (textMsg !== '') {
-    document.querySelector('#msg').innerHTML = textMsg;
-    event.preventDefault();
-    form.removeChild(counter);
-    form.removeChild(rest);
-    text.value = '';
-  }
+  var tweets = document.createElement('p');
+  tweets.textContent = document.querySelector('#textTwitter').value;
+  msg.appendChild(tweets);
+  event.preventDefault();
+  text.value = '';
+  counter.innerHTML = 140;
 }
 
 function stylesCounterBtn() {
@@ -51,5 +47,7 @@ function autoResize() {
 
 function currentTime() {
   var data = new Date;
-  hour.innerHTML = 'Hora: ' + data.getHours() + ':' + data.getMinutes();
+  var hour = document.createElement('span');
+  hour.textContent = 'Hora: ' + data.getHours() + ':' + data.getMinutes();
+  msg.appendChild(hour);
 }
