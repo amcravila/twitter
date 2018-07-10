@@ -14,7 +14,6 @@ function onClickTweetar() {
   msg.appendChild(tweets);
   text.value = '';
   counter.innerHTML = 140;
-  btn.setAttribute('disabled', 'true');
   btn.style.backgroundColor = '#a9a9a9';
   event.preventDefault();
 }
@@ -38,6 +37,10 @@ function stylesCounterBtn() {
   }
   if (textMsg.length > 120 && textMsg.length <= 130) {
     counter.style.color = '#ff00ff';
+  }
+  if (textMsg.trim() === '') {
+    btn.setAttribute('disabled', 'true');
+    btn.style.backgroundColor = '#a9a9a9';
   }
 }
 
