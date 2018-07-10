@@ -43,6 +43,7 @@ form {
   width: 500px;
   outline: none;
   resize: none;
+  overflow: hidden;
 }
 
 #tweetar {

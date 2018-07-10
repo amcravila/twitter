@@ -16,6 +16,8 @@ function onClickTweetar() {
   counter.innerHTML = 140;
   btn.style.backgroundColor = '#a9a9a9';
   event.preventDefault();
+  btn.setAttribute('disabled', 'true');
+  text.rows = 2;
 }
 
 function stylesCounterBtn() {
@@ -42,6 +44,8 @@ function stylesCounterBtn() {
     btn.setAttribute('disabled', 'true');
     btn.style.backgroundColor = '#a9a9a9';
   }
+  text.style.height = '';
+  text.style.height = text.scrollHeight + 'px';
 }
 
 function autoResize() {
@@ -50,9 +54,18 @@ function autoResize() {
   }
 }
 
+function addZero(i){
+  if (i < 10) {
+    i = '0' + i;
+  }
+  return i;
+}
+
 function currentTime() {
-  var data = new Date;
+  var date = new Date();
   var hour = document.createElement('span');
-  hour.textContent = 'Hora: ' + data.getHours() + ':' + data.getMinutes();
+  var gHour = addZero(date.getHours());
+  var gMinutes = addZero(date.getMinutes());
+  hour.textContent = 'Hora: ' + gHour + ':' + gMinutes;
   msg.appendChild(hour);
 }
